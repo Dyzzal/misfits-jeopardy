@@ -31,7 +31,6 @@ public final class Jeopardy extends JavaPlugin implements Listener {
         if(e.getRightClicked().getName()=="stand"){
             Player player = e.getPlayer();
             ArmorStand stand = (ArmorStand) e.getRightClicked();
-            stand.addEquipmentLock(EquipmentSlot.HEAD, LockType.REMOVING_OR_CHANGING);
             System.out.println(player.getName());
         }
     }

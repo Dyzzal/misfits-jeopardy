@@ -18,6 +18,7 @@ public class CommandCreateStand implements CommandExecutor {
 
             ArmorStand stand = (ArmorStand) ((Player)sender).getWorld().spawnEntity(((Player)sender).getLocation(), EntityType.ARMOR_STAND);
             stand.setCustomName("stand");
+            stand.addEquipmentLock(EquipmentSlot.HEAD, LockType.REMOVING_OR_CHANGING);
             System.out.println("Created a new stand");
         }
 

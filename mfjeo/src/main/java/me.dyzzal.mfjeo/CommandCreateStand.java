@@ -1,6 +1,7 @@
 package me.dyzzal.mfjeo;
 
 import org.bukkit.RegionAccessor;
+import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.command.CommandExecutor;
@@ -18,7 +19,7 @@ public class CommandCreateStand implements CommandExecutor {
 
             ArmorStand stand = (ArmorStand) ((Player)sender).getWorld().spawnEntity(((Player)sender).getLocation(), EntityType.ARMOR_STAND);
             stand.setCustomName("stand");
-            stand.addEquipmentLock(EquipmentSlot.HEAD, LockType.REMOVING_OR_CHANGING);
+            stand.addEquipmentLock(EquipmentSlot.HEAD, ArmorStand.LockType.REMOVING_OR_CHANGING);
             System.out.println("Created a new stand");
         }
 

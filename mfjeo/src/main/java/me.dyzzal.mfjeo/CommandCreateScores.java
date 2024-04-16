@@ -1,4 +1,5 @@
 //This is for initializing scoreboards for the player score and for other things if need be
+//Probably won't need this
 
 package me.dyzzal.mfjeo;
 

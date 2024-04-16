@@ -27,11 +27,11 @@ public final class Jeopardy extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onUseArmorStand(PlayerInteractAtEntityEvent e){
-        System.out.println(e.getRightClicked().getName());
-        if(e.getRightClicked().getName()=="stand"){
+        //System.out.println(e.getRightClicked().getName()); this was for debugging
+        ArmorStand stand = (ArmorStand) e.getRightClicked();
+        if(stand.getName().equals("stand")){
             Player player = e.getPlayer();
-            ArmorStand stand = (ArmorStand) e.getRightClicked();
-            System.out.println(player.getName());
+            //System.out.println(player.getName()); this was for debugging
         }
     }
 
